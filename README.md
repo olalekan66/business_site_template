@@ -1,2 +1,1 @@
-# git_test
-Hello Odin!
+My first attempt at building a website for a business client.
