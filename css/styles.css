@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    }
+    header.hero-bg {
+    background-image: url("../images/garden_4.jpg");
+    background-color:#063502;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    }
+    #site-name {
+    font-size: 2rem;
+    font-weight: bold;
+    }
+    #service-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    }
+    #service-list li {
+    display: inline-block;
+    margin: 0 15px;
+    }
+    #service-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    }
+    .shop-title h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 20px;
+    }
+    .shop-title p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    }
+    .shop-title button {
+    padding: 10px 20px;
+    background-color: #063502;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    }
+    .shop-title button:hover {
+    background-color: #03862a;
+    }
+    main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 20px;
+    gap: 30px;
+    }
+    .container,
+    .img-container {
+    width: calc(50% - 15px);
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .container h1 {
+    font-size: 2.5rem;
+    color: #063502;
+    }
+    .container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #4c566a;
+    }
+    button {
+    padding: 10px 20px;
+    background-color: #063502;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    }
+    button:hover {
+    background-color: #03862a;
+    }
+    .img-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    }
+    .products {
+    background-color: #fff;
+    padding: 40px 20px;
+    }
+    .products .section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #063502;
+    }
+    .product {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    }
+    .product h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    color: #063502;
+    }
+    .price {
+    font-size: 1.2rem;
+    color: #063502;
+    }
+    /* Executives Section */
+    .executives {
+    background-color: #fff;
+    padding: 40px 20px;
+    }
+    .executives .section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #063502;
+    }
+    .team {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+    .member {
+    width: 23%;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .member h2 {
+    margin-bottom: 15px;
+    color: #063502;
+    }
+    .member a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2d05e0;
+    text-decoration: none;
+    font-weight: bold;
+    }
+    .member a:hover {
+    text-decoration: underline;
+    }
+
+    footer {
+    background-color: #063502;
+    color: white;
+    padding: 40px 20px;
+    }
+    footer div {
+    margin-bottom: 20px;
+    }
+    footer ul {
+    list-style-type: none;
+    }
+    footer ul li {
+    margin-bottom: 10px;
+    }
+    footer ul li a {
+    color: white;
+    text-decoration: none;
+    }
+    footer ul li a:hover {
+    text-decoration: underline;
+    }
+    footer form label {
+    display: block;
+    margin: 10px 0 5px;
+    }
+    footer form input, footer form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    }
+    footer form button {
+    padding: 10px 20px;
+    background-color: #063502;
+    color: white;
+    border: none;
+    cursor: pointer;
+    }
+    footer form button:hover {
+    background-color: #085501;
+    }
+    footer p {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 20px;
+    }
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+    .top-section {
+    flex-direction: column;
+    text-align: center;
+    }
+    #service-list {
+    margin-top: 20px;
+    }
+    #service-list li {
+    display: block;
+    margin: 5px 0;
+    }
+    .container,
+    .img-container {
+    width: 100%;
+    }
+    .product {
+    width: 100%;
+    margin-bottom: 20px;
+    }
+    .team {
+    flex-direction: column;
+    }
+    .member {
+    width: 100%;
+    }
+    footer {
+    text-align: center;
+    }
+    }

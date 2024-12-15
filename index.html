@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Green Urban Gardens</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="hero-bg">
+	<div class="top-section">
+			<p id="site-name">Green Urban Gardens</p>
+			<ul id="service-list">
+				<li><a href="pages/services.html">Services</a></li>
+				<li><a href="pages/portfolio.html">Portfolio</a></li>
+				<li><a href="pages/about.html">About</a></li>
+			</ul>
+	</div>
+	<div class="shop-title">
+			<h1 id="shop-title">GREEN URBAN GARDENS</h1>
+			<p>A landscape design and urban gardening consulting firm in Seattle. 
+			We're a small but growing business that helps homeowners and small businesses 
+			transform their outdoor spaces into sustainable, eco-friendly gardens.</p>
+			<button>Book a Service</button>
+	</div>
+</header>	
+
+<main class="main">
+	<div class="container">
+		<h1>Garden Design</h1>
+		<p>Our garden design service transforms outdoor spaces into beautiful, 
+		functional landscapes tailored to your style and needs. 
+		From planting to pathways, we craft harmonious designs that bring your vision to life.</p>
+		<button id="button1">Add to Cart</button>
+		<button id="button2">Learn More</button>
+	</div>
+	<div class="img-container">
+		<img src="images/garden_3.jpg" alt="Garden Design">
+	</div>
+	<div class="img-container">
+		<img src="images/garden_6.jpg" alt="Landscape Planning">
+	</div>
+	<div class="container">
+		<h1>Landscape Planning</h1>
+		<p>Our landscape planning service creates balanced, practical layouts that enhance your outdoor space. 
+		We design with purpose, blending aesthetics and functionality to suit your unique needs.</p>
+		<button id="button3">Add to Cart</button>
+		<button id="button4">Learn More</button>
+	</div>
+</main>
+
+<section class="products">
+	<div  class="section-heading">
+		<h1>Product Gallery</h1>
+	</div><br/>
+
+	<div class="product">
+		<img src="images/modern-garden.jpg" alt="Modern Garden">
+		<h3>Modern Garden</h3>
+		<p>Characterized by clean lines, minimalism, and a focus on simplicity and functionality.</p>
+		<p class="price">$600</p>
+	</div>
+	<div class="product">
+		<img src="images/cottage-garden.jpg" alt="Cottage Garden">
+		<h3>Cottage Garden</h3>
+		<p>A loose and informal design style that evokes a romantic feel.</p>
+		<p class="price">$450</p>
+	</div>
+	<div class="product">
+		<img src="images/classic-garden.jpg" alt="Classic Garden">
+		<h3>Classic Garden</h3>
+		<p>A timeless and elegant style that blends formal and informal elements.</p>
+		<p class="price">$550</p>
+	</div>
+</section>
+
+<section class="executives">
+	<div class="section-heading">
+		<h1>Executives</h1>
+	</div><br/>
+	<div class="team">
+		<div class="member">
+			<h2>Jane Doe - Founder & CEO</h2>
+			<p>At Green Urban Gardens, our vision is to create exceptional outdoor spaces 
+				that harmonize with the environment and inspire creativity. 
+				As the Founder & CEO, I am passionate about leading a team dedicated to transforming 
+				spaces into living art. My goal is to ensure every project is sustainable, 
+				initiative-driven, and reflects our clients’ unique needs and dreams.</p>
+			<a href="mailto:jane@greenurbangardens.com">Contact Me</a>
+		</div>
+		<div class="member">
+			<h2>John Smith - Chief Operating Officer</h2>
+			<p>As the COO of Green Urban Gardens, I oversee our operations to ensure that each 
+				project is completed with the highest standards of quality and efficiency.</p>
+			<a href="mailto:john@greenurbangardens.com">Contact Me</a>
+		</div>
+		<!-- Additional members would go here -->
+	</div>
+</section>
+
+<footer>
+	<div>
+		<p>Green Urban Gardens</p>
+		<ul>
+			<li>+1 (202) 456 1234</li>
+			<li>1234 Pine Street, Seattle, WA 98101</li>
+		</ul>
+	</div>
+	<div>
+		<h2>Contact Us</h2>
+		<form id="contact-us">
+			<label for="fullname">Full Name</label>
+			<input type="text" id="fullname" name="fullname" placeholder="Full name" required>
+			
+			<label for="location">Location</label>
+			<input type="text" id="location" name="location" list="locations" required>
+				<datalist id="locations"></datalist>
+
+			<label for="description">Description</label>
+    		<textarea id="description" name="description" rows="4" cols="50" placeholder="Enter a description..."></textarea>
+
+    		<button type="submit">Submit</button>
+		</form>
+	</div>
+	<div>
+		<p>Copyright © Green Urban Gardens</p>
+	</div><br/>
+	<div>
+		<p>Our Socials</p>
+		<ul>
+			<li><a href="instagram.com">Instagram</a></li>
+			<li><a href="facebook.com">Facebook</a></li>
+			<li><a href="x.com">X</a></li>
+		</ul>
+	</div>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const states = [
+            "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", 
+            "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", 
+            "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", 
+            "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", 
+            "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", 
+            "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", 
+            "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", 
+            "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"
+        ];
+
+        const datalist = document.getElementById('locations');
+        states.forEach(state => {
+            const option = document.createElement('option');
+            option.value = state;
+            datalist.appendChild(option);
+        });
+
+        const formContainer = document.getElementById("contact-us");
+        const toggleButton = document.querySelector("footer button");
+
+        let formVisible = false;
+        formContainer.style.display = "none"; 
+
+        toggleButton.addEventListener("click", (e) => {
+            e.preventDefault();
+            formVisible = !formVisible;
+
+            if (formVisible) {
+                formContainer.style.display = "block";
+                toggleButton.textContent = "Hide Contact Form";
+            } else {
+                formContainer.style.display = "none";
+                toggleButton.textContent = "Contact Us";
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
