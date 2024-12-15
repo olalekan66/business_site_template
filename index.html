@@ -95,7 +95,6 @@
 				project is completed with the highest standards of quality and efficiency.</p>
 			<a href="mailto:john@greenurbangardens.com">Contact Me</a>
 		</div>
-		<!-- Additional members would go here -->
 	</div>
 </section>
 
@@ -156,22 +155,22 @@
             datalist.appendChild(option);
         });
 
-        const formContainer = document.getElementById("contact-us");
-        const toggleButton = document.querySelector("footer button");
+        const form = document.getElementById("contact-us");
+        const submitButton = form.querySelector("button[type='submit']");
 
         let formVisible = false;
-        formContainer.style.display = "none"; 
+        form.style.display = "none"; 
 
-        toggleButton.addEventListener("click", (e) => {
+        submitButton.addEventListener("click", (e) => {
             e.preventDefault();
             formVisible = !formVisible;
 
             if (formVisible) {
-                formContainer.style.display = "block";
-                toggleButton.textContent = "Hide Contact Form";
+                form.style.display = "block";
+                submitButton.textContent = "Hide Contact Form";
             } else {
-                formContainer.style.display = "none";
-                toggleButton.textContent = "Contact Us";
+                form.style.display = "none";
+                submitButton.textContent = "Contact Us";
             }
         });
     });
