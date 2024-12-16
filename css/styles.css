@@ -15,24 +15,41 @@
     color: white;
     text-align: center;
     padding: 50px 20px;
+    box-shadow: 0 4px 8px rgba(5, 121, 20, 0.3);
+    }
+    .top-section{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
     }
     #site-name {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
+    margin-right: 60%;
+    display: inline;
+    justify-self: flex-start;
     }
     #service-list {
     list-style-type: none;
-    padding: 0;
     text-align: center;
+    display: inline-flex;
+    justify-self: flex-end;
     }
     #service-list li {
-    display: inline-block;
-    margin: 0 15px;
+    display: inline-flex;
+    margin: 3px;
+    padding: 5px;
+    background-color: #03862a21;
+    border-radius: 10px;
+    }
+    #service-list li:hover{
+        background-color: #03862a70;
     }
     #service-list li a {
     text-decoration: none;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-style: oblique;
     }
     .shop-title h1 {
     font-size: 3rem;
@@ -45,7 +62,7 @@
     }
     .shop-title button {
     padding: 10px 20px;
-    background-color: #063502;
+    background-color:#03862a21;
     color: white;
     border: none;
     cursor: pointer;
@@ -53,7 +70,7 @@
     border-radius: 10px;
     }
     .shop-title button:hover {
-    background-color: #03862a;
+    background-color: #03862a91;
     }
     main {
     display: flex;
@@ -69,7 +86,7 @@
     padding: 20px;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
     .container h1 {
     font-size: 2.5rem;
@@ -108,17 +125,18 @@
     }
     .product {
     display: inline-block;
+    height: 500px;
     width: 30%;
     margin: 0 1.5%;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #f5f5f5;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
     .product img {
     width: 100%;
-    height: auto;
+    height:65%;
     border-radius: 8px;
     }
     .product h3 {
@@ -129,6 +147,8 @@
     .price {
     font-size: 1.2rem;
     color: #063502;
+    font-weight: bold;
+    font-style: oblique;
     }
     /* Executives Section */
     .executives {
@@ -152,7 +172,7 @@
     background-color: #f9f9f9;
     text-align: center;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
     .member h2 {
     margin-bottom: 15px;
